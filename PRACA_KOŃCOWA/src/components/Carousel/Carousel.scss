@@ -1,0 +1,65 @@
+$img : 10;
+$rotateStep : 36;
+$rotate : 0;
+
+
+
+body,html{
+  margin:0;
+  overflow: visible;
+  height:100vh;
+  box-sizing: border-box;
+  background-image: url('/public/assets/black.jpg');
+  background-size: cover;
+  font-size: 10px;
+}
+#img-container {
+  position: relative;
+ }
+
+body{perspective:1000px;transform-style: preserve-3d;}
+#imgs{  
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform-origin: 0 0 -50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3rem;
+    margin-bottom: 3rem;
+    
+  &:hover {
+  cursor: grab;
+}
+
+&.grabbing {
+  cursor: grabbing;
+}
+}
+  img{
+    position:absolute;
+    top:0;left:0;
+    width:30vw;
+    transform-origin:50% 50% -50vw;
+    transform:translate3d(-50%,-50%,0);
+    transform-style: preserve-3d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    border-radius: 10px;
+    
+
+  }
+
+@for $i from 0 through $img {
+  $rotate : $rotateStep * $i;
+  #imgs img:nth-child(#{$i + 1}) {
+     transform: translate3d(-50%,-50%,0) rotate3d(0,1,0,$rotate+deg);
+  }
+}
+@media screen and (max-width: 1300px) {
+  #imgs {
+    top: 80%; 
+  }
+}
