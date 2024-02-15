@@ -1,12 +1,29 @@
 import React from 'react';
-import NavigationComponent from "./components/Navigation/Navigation";
+import Navigation from '../Navigation/Navigation';
+import Carousel from '../Carousel/Carousel';
+import ArrangeServices from '../ArrangeServices/ArrangeServices';
+import PlanTrening from '../PlanTrening/PlanTrening';
+import Footer from '../Footer/Footer';
+import "./FirstPage.scss"
+
 
 
 
 const FirstPage = () => (
-  <div style={{ color: 'red', fontSize: '16px' }}>
-    <NavigationComponent />
-  </div>
+<>
+  <div className='nav-div'>
+    <Navigation />
+    </div>
+    <h1 className='h1-first'>Fotografia oraz Filmy z Drona – Portfolio✔
+    <p>Wrocław i Okolice – Profesjonalna i Szybka Realizacja</p> </h1>
+    <Carousel />
+    <ArrangeServices />
+    <PlanTrening />
+    <Footer />
+
+   
+
+  </>
 );
 
 export default FirstPage;

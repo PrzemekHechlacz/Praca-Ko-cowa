@@ -3,24 +3,24 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import AboutMe from "./components/AboutMe/AboutMe";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+import FirstPage from './components/FirstPage/FirstPage';
 
+// const Navigation = () => (
+//   <nav>
+//     <ul>
+//       <li><Link to="/about-me">About Me</Link></li>
+//       <li><Link to="/portfolio">Portfolio</Link></li>
+//       <li><Link to="/contact">Contact</Link></li>
+//     </ul>
+//   </nav>
+// );
 
-const Navigation = () => (
-  <nav>
-    <ul>
-      <li><Link to="/about-me">About Me</Link></li>
-      <li><Link to="/portfolio">Portfolio</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-    </ul>
-  </nav>
-);
-
-const FirstPage = () => (
-  <div>
-    <Navigation />
-    <p>shhshshs</p>
-  </div>
-);
+// const FirstPage = () => (
+//   <div>
+//     <Navigation />
+//     <p>shhssddshshs</p>
+//   </div>
+// );
 
 const App = () => {
   return (
