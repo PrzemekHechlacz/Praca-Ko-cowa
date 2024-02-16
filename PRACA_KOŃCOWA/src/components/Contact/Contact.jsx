@@ -1,10 +1,15 @@
 import React from "react"
-
+import Navigation from '../Navigation/Navigation';
 
 
 const Contact = () => {
     return (
-         <p>kontakt</p>
+        <>
+        <div>
+    <Navigation /> 
+    </div>
+         <p>Contact</p>
+         </>
     )
 }
 
