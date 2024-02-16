@@ -7,10 +7,10 @@ import Navigation from '../Navigation/Navigation';
 const AboutMe = () => {
     return (
         <>
-        <div className="Nav-div">
+        <div>
     <Navigation /> 
     </div>
-         <p className='aboutme'>"o mnie"</p>
+         <p className='aboutme'>o mnie</p>
          </>
     )
 }
