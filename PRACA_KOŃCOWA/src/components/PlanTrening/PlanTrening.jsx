@@ -1,6 +1,5 @@
 import React from "react"
 import "./PlanTrening.scss"
-import { Button } from 'primereact/button';
 import { Link } from 'react-router-dom';
 
 
@@ -14,7 +13,7 @@ const PlanTrening = () => {
        <nav> 
          <ul>
             <li className="li-trening">
-            <Link to="/link-trening"><Button label="Umów szkolenie" icon="pi pi-check" size="large" className="btn-trening" /></Link>
+            <Link to="/link-trening"><button className="btn-trening">umów lot</button></Link>
             </li>
         </ul>
        </nav>
