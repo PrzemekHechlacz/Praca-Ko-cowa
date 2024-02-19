@@ -8,7 +8,7 @@ const Portfolio = () => {
     '/assets/foto1.jpg',
     '/assets/kg1.jpg',
     '/assets/kg2.jpg',
-    // ...add more image paths as needed
+   
   ];
 
   const nextImage = () => {
@@ -25,7 +25,7 @@ const Portfolio = () => {
     <Navigation />
       
       <div className="gallery-container">
-        <img id="portfolio" src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
+        <img className="portfolio" src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
         <div className="navigation_portfolio">
           <button onClick={prevImage}>&lt; Prev</button>
           <button onClick={nextImage}>Next &gt;</button>

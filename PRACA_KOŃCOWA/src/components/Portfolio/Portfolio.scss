@@ -3,10 +3,13 @@
     flex-direction: column; /* Ustawianie kierunku flexa na kolumnę */
     align-items: center; /* Wyśrodkowanie w pionie */
   
-    #portfolio {
+    .portfolio {
       max-width: 100%;  
-      border: 1px solid red;
+     
       border-radius: 4px;
+      position: absolute;
+      left: 60rem;
+      top:30rem;
       /* Usunięcie zbędnych stylów */
     }
   

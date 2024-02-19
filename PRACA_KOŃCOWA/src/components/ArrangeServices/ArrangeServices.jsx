@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "./ArrangeServices.scss"
-import { Button } from 'primereact/button';
 import { Link } from 'react-router-dom';
 
 
@@ -16,7 +15,7 @@ return (
         <nav> 
         <ul>
            <li className="li-arrange">
-           <Link to="/link-arrange"><Button label="Sprawdź wolne terminy" icon="pi pi-check" size="large" className="btn-arrange" /></Link>
+           <Link to="/link-arrange"><button className="btn-arrange">umów usługę</button></Link>
            </li>
        </ul>
       </nav>
