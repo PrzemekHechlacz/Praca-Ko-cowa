@@ -11,9 +11,7 @@ import "./FirstPage.scss"
 
 const FirstPage = () => (
 <>
-  <div className='nav-div'>
     <Navigation />
-    </div>
     <h1 className='h1-first'>Fotografia oraz Filmy z Drona – Portfolio✔
     <p>Wrocław i Okolice – Profesjonalna i Szybka Realizacja</p> </h1>
     <Carousel />

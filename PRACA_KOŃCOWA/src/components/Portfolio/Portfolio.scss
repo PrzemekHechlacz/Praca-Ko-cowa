@@ -1,0 +1,36 @@
+.gallery-container {
+    display: flex;
+    flex-direction: column; /* Ustawianie kierunku flexa na kolumnę */
+    align-items: center; /* Wyśrodkowanie w pionie */
+  
+    #portfolio {
+      max-width: 100%;  
+      border: 1px solid red;
+      border-radius: 4px;
+      /* Usunięcie zbędnych stylów */
+    }
+  
+    .navigation_portfolio {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+  
+      button {
+        padding: 8px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    }
+  }
+  
