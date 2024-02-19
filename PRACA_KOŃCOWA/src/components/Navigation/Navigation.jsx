@@ -2,7 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Navigation.scss";
 
-const Navigation = () => (
+const Navigation = () => {
+
+
+
+
+
+  
+  return (
  <div className='Nav-div'>
  <nav>
       <ul className='Ul-nav'>
@@ -13,6 +20,7 @@ const Navigation = () => (
       </ul>
   </nav>
   </div>
-);
+)
+  }
 
 export default Navigation;
