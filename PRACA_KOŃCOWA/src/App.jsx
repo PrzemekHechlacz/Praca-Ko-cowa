@@ -7,16 +7,18 @@ import FirstPage from './components/FirstPage/FirstPage';
 import LinkTrening from './components/LinkTrening/LinkTrening';
 import LinkArrange from './components/LinkArrange/LinkArrange';
 
+
 const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/" element={<FirstPage />} />
       <Route path="/link-arrange" element={<LinkArrange/>} />
        <Route path="/link-trening" element={<LinkTrening />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/" element={<FirstPage />} />
+       
       </Routes>
     </Router>
   );

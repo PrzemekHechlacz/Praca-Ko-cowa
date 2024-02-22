@@ -12,7 +12,10 @@
     top: 10%;
     left: 20%;
     
-   
+   .arrangePlan {
+    display: flex;
+    flex-wrap: wrap;
+   }
 
 
 @media screen and (min-width: 1300px) {

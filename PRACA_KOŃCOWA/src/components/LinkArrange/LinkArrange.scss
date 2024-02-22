@@ -27,13 +27,13 @@
     transition:opacity .5s;
     border-radius:inherit;
   }
-  a:nth-child(1){
+  #first-link{
     border-radius:40vmin 0 0 0;
     transform-origin: 110% 110%;
     transition:transform .4s .15s;
   }
   a:nth-child(1) div{
-    background-image:url('/public/assets/kg1.jpg');
+    background-image:url('/assets/kg1.jpg');
   }
   a:nth-child(2){
     border-radius:0 40vmin 0 0;
@@ -42,7 +42,7 @@
     transition:transform .4s .2s;
   }
   a:nth-child(2) div{
-    background-image:url('/public/assets/kg2.jpg');
+    background-image:url('/assets/kg2.jpg');
   }
   a:nth-child(3){
     border-radius:0 0 0 40vmin;
@@ -51,7 +51,7 @@
     transition:transform .4s .25s;
   }
   a:nth-child(3) div{
-    background-image:url('/public/assets/kg3.jpg');
+    background-image:url('/assets/kg3.jpg');
   }
   a:nth-child(4){
     border-radius:0 0 40vmin 0;
@@ -60,7 +60,7 @@
     transition:transform .4s .3s;
   }
   a:nth-child(4) div{
-    background-image: url('/public/assets/kg4.jpg');
+    background-image: url('/assets/kg4.jpg');
   }
   a:nth-child(5){
     width:55%;height:55%;
@@ -70,7 +70,7 @@
     transform:scale(1);
   }
   a:nth-child(5) div{
-    background-image: url('/public/assets/dron.jpg');
+    background-image: url('/assets/dron.jpg');
   }
   .span-arrange1 {
     position:relative;
@@ -112,7 +112,12 @@
   }
 
 
-
-
+.Calendar_button {
+    width: 600px;
+    height: 600px;
+    background-color: transparent; /* Ustaw na transparentny kolor */
+    opacity: 0.5; /* Ustaw opacity na 0, aby był całkowicie przezroczysty */
+    border: none; /* Opcjonalnie, usuń obramowanie */
+  }
 
   

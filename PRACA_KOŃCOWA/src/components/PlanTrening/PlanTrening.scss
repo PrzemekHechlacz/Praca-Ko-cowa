@@ -1,24 +1,18 @@
 .trening-div {
+    display: flex;
+    flex-direction: column;
     color: black;
     position: absolute;
     padding: 1.5rem;
-    top: 115%;
-    left: 50%;
+    top: 65rem;
+    left: 66rem;
     border-radius: 10px;
     width: 43rem;
-    height: 43rem;
-    background-color: grey;
+    height: 23rem;
+    background: linear-gradient(45deg, rgb(64, 161, 161), rgb(78, 76, 226));
 
 }
-.foto-section-trening {
-    position: absolute;
-    top:60%;
-    left: 50%;
-    height: 45%;
-    width:80%;
-    margin-right: 200px;
-    
-}
+
 
 .h1-section-trening {
     color:black;
@@ -36,23 +30,19 @@
 
 }
 .btn-trening {
-    display: block;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 10rem;
-    padding: 1rem;
-    margin-top: 26.7rem;
-    border-radius: 5px;
-    background-color:  burlywood;
+    border: 1px solid white;
+    align-items: center;
+    color: white;
+    background: #222;
+    cursor: pointer;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 10px;
+    position: absolute;
+    left: 13rem;
+    top: 19rem;
+  }
 
-
-    &:hover {
-        color: gold;
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    }
-
-}
 
 .li-trening {
     list-style: none;
