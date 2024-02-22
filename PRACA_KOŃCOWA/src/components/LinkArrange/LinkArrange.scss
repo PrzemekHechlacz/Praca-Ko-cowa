@@ -111,13 +111,12 @@
     transform:translatez(0px);
   }
 
-
-.Calendar_button {
+  .Calendar_button {
     width: 600px;
     height: 600px;
-    background-color: transparent; /* Ustaw na transparentny kolor */
-    opacity: 0.5; /* Ustaw opacity na 0, aby był całkowicie przezroczysty */
-    border: none; /* Opcjonalnie, usuń obramowanie */
+    background-color: transparent; 
+    opacity: 0.5; 
+    border: none;
   }
 
   

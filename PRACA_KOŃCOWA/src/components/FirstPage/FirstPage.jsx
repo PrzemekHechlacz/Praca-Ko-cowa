@@ -11,12 +11,18 @@ import "./FirstPage.scss"
 
 const FirstPage = () => (
 <>
+
+
     <MenuNav/>
+    <h1 className='First-h1'>PROFESJONALNE SZKOLENIA, FOTOGRAFIA I FILMY Z DRONA
+    <br/> <br/> ZAPRASZAM DO WSPÓŁPRACY </h1>
     <Carousel />
+    <div className='ArrangePlan'>
     <ArrangeServices />
     <PlanTrening />
+    </div>
     <Footer />
-
+  
    
 
   </>

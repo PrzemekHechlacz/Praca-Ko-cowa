@@ -6,11 +6,13 @@
     padding: 1.5rem;
     top: 65rem;
     left: 66rem;
-    border-radius: 10px;
     width: 43rem;
     height: 23rem;
-    background: linear-gradient(45deg, rgb(64, 161, 161), rgb(78, 76, 226));
-
+    border-radius: 1rem;
+    background: #C9D6FF;  
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+ 
 }
 
 
@@ -30,18 +32,27 @@
 
 }
 .btn-trening {
-    border: 1px solid white;
-    align-items: center;
-    color: white;
-    background: #222;
     cursor: pointer;
-    width: 20rem;
-    height: 5rem;
+    margin-top: 2rem;
+    margin-left: 11rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 1.5rem;
+    background: rgb(255, 240, 240);
+    font-size: 1.5rem;
     border-radius: 10px;
-    position: absolute;
-    left: 13rem;
-    top: 19rem;
+    transition: all 0.5s;
+    box-shadow:
+    10px -20px 20px lightblue inset,
+    5px -5px 10px black;
+    &:hover {
+      box-shadow:
+      2px -3px 2px lightblue inset,
+      2px 4px 5px rgb(36, 36, 4);
+      background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    }
   }
+
 
 
 .li-trening {
