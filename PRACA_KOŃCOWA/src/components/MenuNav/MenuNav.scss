@@ -1,9 +1,13 @@
+@import '/src/main.scss';
 
-
-.navire { background:url("https://cdn.pixabay.com/photo/2023/03/11/15/07/drone-7844660_1280.png") no-repeat; background-size:100% auto; width:14rem; height:14rem; position:absolute; top:6rem; right:10px;-webkit-transition: right 1s ease; transition: right 4s ease; z-index: 1; 
-  &.visible {
-    display: block; 
-  }
+.navire { background:url("https://cdn.pixabay.com/photo/2023/03/11/15/07/drone-7844660_1280.png") no-repeat; 
+  background-size:100% auto;
+   width:14rem; height:14rem; 
+   position:absolute;
+  top:6rem; right:10px;
+  -webkit-transition: right 1s ease; 
+  transition: right 4s ease; z-index: 1; 
+ 
 }
 
 .mainMenuOverlay.open .navire{right:90%;-webkit-transition: right 20s ease 1s; transition: right 20s ease 1s;}
@@ -223,6 +227,7 @@ position: absolute;	top: 56%;	left: 50%;
   margin-left: 6rem;
   margin-top: 0.9rem;
   cursor: none;
+ 
 }
 
 .closing {

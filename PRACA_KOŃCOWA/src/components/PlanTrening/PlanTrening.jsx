@@ -13,7 +13,7 @@ const PlanTrening = () => {
        <nav> 
          <ul>
             <li className="li-trening">
-            <Link to="/link-trening"><button className="btn-trening">umów lot</button></Link>
+            <Link to="/link-trening"><button className="btn-trening">umów szkolenie</button></Link>
             </li>
         </ul>
        </nav>

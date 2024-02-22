@@ -9,23 +9,20 @@
   background: #C9D6FF; 
   background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
   background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+  
  
   }
   
   .calendar-p1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     margin-top: 30rem;
     text-align: center;
     color: black;
+    font-family: "Jura", sans-serif;
     }
   
   .calendar-container {
     margin: 3rem;
-  }
-  
-  .bold {
-    font-weight: bold;
     
   }
   
@@ -35,16 +32,18 @@
     align-items: center;
     color: black;
     margin-top: 30rem;
+   
     
   .form-group {
       display: flex;
       flex-direction: column;
       margin-bottom: 1.5rem;
+   
       
 label {
         margin-bottom: 1rem;
         text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Jura", sans-serif;
       }
       input {
         padding: 5px;
@@ -53,13 +52,14 @@ label {
         box-shadow:
         10px -20px 20px lightblue inset,
         5px -5px 10px black;
+        
       }
     }
     
     .submit-btn {
       cursor: pointer;
       padding: 1rem 1.5rem;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: "Jura", sans-serif;
       background: rgb(255, 240, 240);
       font-size: 1.5rem;
       border-radius: 10px;
@@ -96,13 +96,14 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   .react-calendar {
     border-radius: 1rem;
     color: blue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Jura", sans-serif;
     box-shadow:
     10px -20px 20px lightblue inset,
     5px -5px 10px black;
     margin-top: 5rem;
     }
   .select-calendar {
+    font-family: "Jura", sans-serif;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow:

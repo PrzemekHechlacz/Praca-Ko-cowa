@@ -1,7 +1,5 @@
-import React, {useState} from "react"
+import React from "react"
 import "./Footer.scss";
-import { FacebookShareButton, TwitterShareButton } from "react-share";
-import { FaFacebook, FaTwitter } from "react-icons/fa";
 
 
 
@@ -12,7 +10,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-        <p>copyright by Przemysław Hechłacz</p>
+        <p>copyright by <span className="footer-span">Przemysław Hechłacz</span></p>
        
          </div>
     )
