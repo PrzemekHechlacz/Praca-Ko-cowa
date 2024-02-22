@@ -12,16 +12,8 @@ const Footer = () => {
 
     return (
         <div className="footer">
-        <div className="copyright"><p>copyright by Przemysław Hechłacz</p></div>
-        <div className="icons-footer">
-        <FacebookShareButton url="https://example.com" quote="Example Title">
-         <FaFacebook size={32} round />
-       </FacebookShareButton>
- 
-       <TwitterShareButton url="https://example.com" title="Example Title">
-         <FaTwitter size={32} round />
-       </TwitterShareButton>
-       </div> 
+        <p>copyright by Przemysław Hechłacz</p>
+       
          </div>
     )
 }

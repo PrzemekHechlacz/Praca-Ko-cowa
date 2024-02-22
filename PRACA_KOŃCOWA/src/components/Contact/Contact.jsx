@@ -8,7 +8,7 @@ const Contact = () => {
        <MenuNav /> 
        <div className="contact-div" style={{ position: 'absolute', top: '30rem'}}>
        <h1 className="contact-h1">KONTAKT Z FOTOGRAFEM</h1>
-       <br/><br/>
+       <br/>
        <h2 className="contact-h2">Kamil Grzyb kgfotografia.pl</h2>
        <br/>
         <p className="contact-p"  >

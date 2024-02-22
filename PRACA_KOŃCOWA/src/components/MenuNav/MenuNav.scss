@@ -1,22 +1,19 @@
 
 
-.navire { background:url("https://cdn.pixabay.com/photo/2023/03/11/15/07/drone-7844660_1280.png") no-repeat; background-size:100% auto; width:130px; height:130px; position:absolute; top:70px; right:-130px;-webkit-transition: right 1s ease; transition: right 5s ease; z-index: 1; display:none;
+.navire { background:url("https://cdn.pixabay.com/photo/2023/03/11/15/07/drone-7844660_1280.png") no-repeat; background-size:100% auto; width:14rem; height:14rem; position:absolute; top:6rem; right:10px;-webkit-transition: right 1s ease; transition: right 4s ease; z-index: 1; 
   &.visible {
-    display: block; /* Po dodaniu klasy .visible pojawi się */
+    display: block; 
   }
 }
 
-
-
-.mainMenuOverlay.open .navire{right:70%;-webkit-transition: right 28s ease 1s; transition: right 28s ease 1s;}
+.mainMenuOverlay.open .navire{right:90%;-webkit-transition: right 20s ease 1s; transition: right 20s ease 1s;}
 /* ### main Menu Overlay */
 .mainMenuOverlay {
-	background-color: rgba(34, 152, 195, 0.84);
+	background-color: rgba(34, 152, 195, 0.44);
 	position: fixed; 
     margin-top: -3rem; left: 0;right: 0;bottom: -42rem;z-index: 999;
 	height:245px;
 	box-shadow: 0 0 15px -3px #03374A;
-     border-radius: 0 0 100% 100% / 0 0 14% 14%;
 	-webkit-transition: bottom 0.5s ease; transition: bottom 0.5s ease;
     
 }
@@ -25,8 +22,7 @@
 
 .mainMenuOverlay .toggleMenu {
 	display: block;
-	background: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/sandwich.png) no-repeat center center #65B5D0;background-size: 23px auto;
-  background-color:#65B5D0;
+	background-color:#65B5D0;
 	border: 1px solid #FFF;	border-radius: 80px;
 	width: 62px;height: 62px;
 	position: absolute;top: -12px;left: 50%;
@@ -42,8 +38,7 @@
 .mainMenuOverlay.open .toggleMenu {	top: 56%;	background-color: #2298C3;}
 
 .mainMenuOverlay .itemMenuBox {
-	background: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/go2.png) no-repeat center center;background-size: 28px auto;
-	position: absolute;	top: 56%;	left: 50%;
+position: absolute;	top: 56%;	left: 50%;
 	margin: -31px 0 0 -31px;
 	height: 62px;	width: 142px;
 	text-align: right;
@@ -88,45 +83,34 @@
 
 
 .mainMenuOverlay .itemMenuBox.bills .itemMenu {
-	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/file.png);
-	background-size: 20px auto;*/
+
 	-webkit-transform: rotate(90deg);	-ms-transform: rotate(90deg);	transform: rotate(90deg);
 }
 
 
 .mainMenuOverlay .itemMenuBox.tarsheed .itemMenu {
-	/* background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/tarsheed.png); 
-	background-size: 38px auto;*/
 	-webkit-transform: rotate(30deg);	-ms-transform: rotate(30deg);	transform: rotate(30deg);
 }
 
 .mainMenuOverlay .itemMenuBox.employees .itemMenu {
-	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/employees.png);
-	background-size: 38px auto;*/
 	-webkit-transform: rotate(330deg);-ms-transform: rotate(330deg);transform: rotate(330deg);
 }
 
 
 
 .mainMenuOverlay .itemMenuBox.location .itemMenu {
-	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/marker.png);
-	background-size: 24px auto;*/
 	-webkit-transform: rotate(270deg);	-ms-transform: rotate(270deg);	transform: rotate(270deg);
 }
 
 
 
 .mainMenuOverlay .itemMenuBox.eservices .itemMenu {
-	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/mouse.png);
-	background-size: 32px auto;*/
 	-webkit-transform: rotate(210deg);	-ms-transform: rotate(210deg);	transform: rotate(210deg);
 }
 
 
 
 .mainMenuOverlay .itemMenuBox.contact .itemMenu {
-	/*background-image: url(https://res.cloudinary.com/dioieuprs/image/upload/v1466688705/floating-menu/phone.png);
-	/background-size: 19px auto;*/
 	-webkit-transform: rotate(150deg);	-ms-transform: rotate(150deg);	transform: rotate(150deg);
 }
 
@@ -226,23 +210,23 @@
     to {-moz-transform: translate(0, -0px);}    
 }
 
+.dron_menu {
+  height: 35px;
+  width:35px;
+  border-radius: 50px;
+ margin-top: 1.35rem;
+}
 
-
-/* signature */
-.signatureBox{text-align:right; padding:4px;}
-.signatureBox.fixed{ position:fixed; bottom:8px; right:8px; }
-.signature, .signature a{color:#484848; }
-.signature:before, .signature:after{ display:inline-block; overflow:hidden; vertical-align: bottom; -webkit-transition: all 0.5s; -webkit-transition: all 0.5s; width:11px}
-.signature:before{content:'Mahmoud';}
-.signature:after{content:'NBET'; margin-left:0px;width:10px}
-
-.signature:hover{color:#484848;}
-.signature:hover:before{width:76px;}
-.signature:hover:after{width:34px; margin-left:3px;}
-
+.logo-kg {
+  width:35rem;
+  height: 20rem;
+  margin-left: 6rem;
+  margin-top: 0.9rem;
+  cursor: none;
+}
 
 .closing {
-    animation: floatOut 2s ease-out forwards; /* Dostosuj czas do własnych potrzeb */
+    animation: floatOut 2s ease-out forwards; 
   }
   
   @keyframes floatOut {
@@ -250,7 +234,7 @@
       right: 0;
     }
     to {
-      right: -130px; /* Pozycja startowa */
+      right: -130px; 
       display: none;
     }
   }

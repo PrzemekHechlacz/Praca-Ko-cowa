@@ -15,10 +15,9 @@ const MenuNav = ({ style }) => {
   const handleAnimationEnd = () => {
     if (isOpen && !isClosing) {
       setIsClosing(true);
-      // Po kilku sekundach zamknij menu
       setTimeout(() => {
         setIsOpen(false);
-      }, 20000); // Dostosuj czas do własnych potrzeb
+      }, 20000); 
     }
   };
 
@@ -26,39 +25,40 @@ const MenuNav = ({ style }) => {
     <div style={{position: 'relative'}}>
     <div style={{ position: 'absolute', top: '4.5rem'}} id="mainMenu"  className={`mainMenuOverlay floating2 ${isOpen ? 'open' : ''}`}
     onAnimationEnd={handleAnimationEnd}>
+    <div className='logo-kg'><img  className="logo-kg" src="https://kgfotografia.pl/wp-content/uploads/2017/08/kgfotografia_logo_2020_bp.png" alt="" /></div>
       <div className={`navire floating3 ${isOpen ? 'visible' : ''}`} ></div>
       <div className="itemMenuBox bills">
       <Link to="/about-me" rel="noreferrer" className="itemMenu">
-        <i className="fa fa-file-text-o" aria-hidden="true">o Mnie</i>
+        <i className="fa fa-user-circle-o" ></i>
       </Link>
     </div>
       <div className="itemMenuBox tarsheed">
         <Link to="/portfolio" rel="noreferrer" className="itemMenu">
-      <i className="fa fa-diamond" aria-hidden="true">f</i>
+      <i className="fa fa-photo" ></i>
         </Link>
        </div>
       <div className="itemMenuBox employees">
         <a href="#" className="itemMenu ">
-          <i className="fa fa-users" aria-hidden="true"><Link to="/contact"></Link></i>
+          <i className="fa fa-facebook" ><Link to="/contact"></Link></i>
         </a>
       </div>
       <div className="itemMenuBox location">
       <Link to="/" rel="noreferrer" className="itemMenu">
-      <i className="fa fa-diamond" aria-hidden="true"></i>
+      <i className="fa fa-bars"></i>
         </Link>
       </div>
       <div className="itemMenuBox eservices">
         <a href="#" className="itemMenu ">
-          <i className="fa fa-key" aria-hidden="true"></i>
+          <i className="fa fa-instagram"></i>
         </a>
       </div>
       <div className="itemMenuBox contact">
       <Link to="/contact" rel="noreferrer" className="itemMenu">
-          <i className="fa fa-phone" aria-hidden="true"></i>
+          <i className="fa fa-phone" ></i>
         </Link>
       </div>
       <a href="#" className="toggleMenu floating" onClick={toggleMenu}>
-        <i className="fa fa-bars" aria-hidden="true"></i>
+        <i className=""> <img  className="dron_menu" src="https://cdn-icons-gif.flaticon.com/10607/10607601.gif" alt="" /></i>
       </a>
     </div>
 </div>

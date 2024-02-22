@@ -61,7 +61,7 @@ const handleAnimationEnd = () => {
           <Calendar locale={pl} onChange={handleDateChange} value={dates} tileClassName={({date, view}) => (view === 'month' && dates.find(d => d.toDateString() === date.toDateString()) ? 'highlight' : null)} />
         </div>
         {isFormVisible && (
-       <form className='form' onSubmit={handleSubmit}>
+       <form className='form-calendar' onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='dates'>Wybrane daty:</label>
             <input
@@ -107,7 +107,7 @@ const handleAnimationEnd = () => {
           </div>
           <div className='form-group'>
             <label htmlFor='product'>Wybierz usługę:</label>
-            <select
+            <select className='select-calendar'
               id='product'
               name='product'
               value={product}

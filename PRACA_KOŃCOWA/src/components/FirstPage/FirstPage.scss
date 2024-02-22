@@ -1,21 +1,28 @@
-.h1-first {
-    display: block;
+.First-h1 {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: gold;
-    background-color: rgba(240, 255, 255, 0.4);
-    border-radius: 10px;
-    max-width: 100%;
+    color: black;
+    background: #C9D6FF; 
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    width: 100vw;
     margin: 2rem;
-    margin-top: 10rem;
+    margin-top: 30rem;
     position: absolute;
     padding: 2rem;
-    top: 10%;
-    left: 20%;
-    
-   .arrangePlan {
-    display: flex;
-    flex-wrap: wrap;
-   }
+    border: 1px solid #ccc;
+    box-shadow:
+    10px -20px 20px lightblue inset,
+    5px -5px 10px black;
+   
+
+   
+    .ArrangePlan {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+    }
 
 
 @media screen and (min-width: 1300px) {

@@ -1,7 +1,9 @@
 
 
 .portfolio-container {
-  background: linear-gradient(45deg, rgb(64, 161, 161), rgb(78, 76, 226));
+    background: #C9D6FF; 
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -60,10 +62,7 @@
       object-fit: cover;
       width: 100%;
 
-      &:focus {
-          border: solid 5px rgb(78, 76, 226);
-      }
-  }
+     }
 }
 
 .popup {

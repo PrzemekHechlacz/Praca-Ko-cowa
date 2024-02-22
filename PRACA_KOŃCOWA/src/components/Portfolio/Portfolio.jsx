@@ -24,6 +24,10 @@ const Portfolio = () => {
     '/assets/kg9.jpg',
     '/assets/kg10.jpg',
     '/assets/kg11.jpg',
+    '/assets/kg5.jpg',
+    '/assets/kg6.jpg',
+    '/assets/kg7.jpg',
+    '/assets/kg8.jpg',
     
   ];
 

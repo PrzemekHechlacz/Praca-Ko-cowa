@@ -1,6 +1,7 @@
 .footer {
   display: flex;
-    color: black;
+    color:black;
+    font-size: 2rem;
     background-color: white;
     position: absolute;
     padding: 1.5rem;
@@ -8,12 +9,11 @@
     width: 100vw;
     height: 5rem;
     background-color: rgba(240, 255, 255, 0.4);
-    justify-content: space-between;
-    
-  }
-  .copright {
-   
- 
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    border: 1px solid #ccc;
+        box-shadow:
+        10px -20px 20px lightblue inset,
+        5px -5px 10px black;
   }
+  
