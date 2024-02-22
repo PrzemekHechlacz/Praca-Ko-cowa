@@ -4,14 +4,16 @@ import 'react-calendar/dist/Calendar.css';
 import pl from 'date-fns/locale/pl';
 import "./CalendarArrange.scss"
 import emailjs from 'emailjs-com';
+import MenuNav from "../MenuNav/MenuNav"
 
 const CalendarArrange = () => {
-  const [dates, setDates] = useState([]);
+    const [dates, setDates] = useState([]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [product, setProduct] = useState('');
   const [formSent, setFormSent] = useState(false);
+  const [isFormVisible, setIsFormVisible] = useState(true);
 
   const handleDateChange = (date) => {
     const selectedDate = dates.find(d => d.toDateString() === date.toDateString());
@@ -26,22 +28,35 @@ const CalendarArrange = () => {
     e.preventDefault();
   
     emailjs.sendForm('service_qcks8wr', 'template_scg696m', e.target, 'VRkHMneHvVIMyNma9')
-      .then((result) => {
-          console.log(result.text);
-          setFormSent(true);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+    .then((result) => {
+      console.log(result.text)
+      setName('');
+      setEmail('');
+      setPhone('');
+      setProduct('');
+      setDates([]);
+      setIsFormVisible(false);
+       setFormSent(true);
+    }, (error) => {
+      console.log(error.text);
+    });
+};
+
+const handleAnimationEnd = () => {
   
+  setFormSent(false);
+  setIsFormVisible(true);
+};
 
   return (
     <>
-      <div className='app-calendar'>
-        <h1 className='text-center'>SPRAWDŹ CZY MAM WOLNY TERMIN</h1>
+    <MenuNav />
+    <div className='app-calendar'>
         <div className='calendar-container'>
+        <p className='calendar-p1'>SPRAWDŹ CZY MAM WOLNY TERMIN</p>
           <Calendar locale={pl} onChange={handleDateChange} value={dates} tileClassName={({date, view}) => (view === 'month' && dates.find(d => d.toDateString() === date.toDateString()) ? 'highlight' : null)} />
         </div>
+        {isFormVisible && (
         <form className='form' onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='dates'>Wybrane daty:</label>
@@ -105,7 +120,8 @@ const CalendarArrange = () => {
             Wyślij
           </button>
         </form>
-        {formSent && <p>Udało się! Formularz został wysłany :) </p>}
+        )}
+        {formSent &&  (<div className="sending_div" style={{position: 'fixed', top: 0, left: 0, height: '100vh', width: '100vw', zIndex: 9999, background: `url(https://cdn.dribbble.com/users/883586/screenshots/2335023/media/a9766036d474bd7f2727fdb102bdf2b5.gif) center / cover no-repeat`}} onAnimationEnd={handleAnimationEnd}></div>)}
       </div>
     </>
   )

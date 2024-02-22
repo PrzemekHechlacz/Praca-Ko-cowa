@@ -4,7 +4,7 @@ import 'react-calendar/dist/Calendar.css';
 import pl from 'date-fns/locale/pl';
 import "./CalendarTrening.scss"
 import emailjs from 'emailjs-com';
-import axios from 'axios';
+import MenuNav from "../MenuNav/MenuNav"
 
 const CalendarTrening = () => {
   const [dates, setDates] = useState([]);
@@ -13,7 +13,7 @@ const CalendarTrening = () => {
   const [phone, setPhone] = useState('');
   const [product, setProduct] = useState('');
   const [formSent, setFormSent] = useState(false);
-  const [weather, setWeather] = useState(null);
+  const [isFormVisible, setIsFormVisible] = useState(true);
 
   const handleDateChange = (date) => {
     const selectedDate = dates.find(d => d.toDateString() === date.toDateString());
@@ -21,39 +21,47 @@ const CalendarTrening = () => {
       setDates(dates.filter(d => d.toDateString() !== selectedDate.toDateString()));
     } else {
       setDates([...dates, date]);
-      fetchWeather(date);
+     
     }
   };
 
-  const fetchWeather = async (date) => {
-    const timestamp = Math.floor(date.getTime() / 1000);
-    const response = await axios.get(`http://api.openweathermap.org/data/2.5/onecall/timemachine?lat=51.1079&lon=17.0385&dt=${timestamp}&appid=5ce7e76f126f8274300cce6c45ee2d55
-    `);
-    setWeather(response.data.current.weather[0].description);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
   
-    emailjs.sendForm('service_qcks8wr', 'template_scg696m', e.target, 'VRkHMneHvVIMyNma9')
-      .then((result) => {
-          console.log(result.text);
-          setFormSent(true);
-      }, (error) => {
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+    
+      emailjs.sendForm('service_qcks8wr', 'template_scg696m', e.target, 'VRkHMneHvVIMyNma9')
+        .then((result) => {
+          console.log(result.text)
+          setName('');
+          setEmail('');
+          setPhone('');
+          setProduct('');
+          setDates([]);
+          setIsFormVisible(false);
+           setFormSent(true);
+        }, (error) => {
           console.log(error.text);
-      });
-  };
+        });
+    };
+    
+
+const handleAnimationEnd = () => {
   
+  setFormSent(false);
+  setIsFormVisible(true);
+};
 
   return (
     <>
+    <MenuNav />
       <div className='app-calendar-trening'>
-        <h1 className='text-center'>SPRAWDŹ CZY MAM WOLNY TERMIN</h1>
         <div className='calendar-container'>
+        <p className='calendar-p1'>SPRAWDŹ CZY MAM WOLNY TERMIN</p>
           <Calendar locale={pl} onChange={handleDateChange} value={dates} tileClassName={({date, view}) => (view === 'month' && dates.find(d => d.toDateString() === date.toDateString()) ? 'highlight' : null)} />
         </div>
-        {weather && <div className='weather'>Pogoda we Wrocławiu: {weather}</div>}
-        <form className='form' onSubmit={handleSubmit}>
+        {isFormVisible && (
+       <form className='form' onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='dates'>Wybrane daty:</label>
             <input
@@ -116,7 +124,8 @@ const CalendarTrening = () => {
             Wyślij
           </button>
         </form>
-        {formSent && <p>Udało się! Formularz został wysłany :) </p>}
+        )}
+        {formSent &&  (<div className="sending_div" style={{position: 'fixed', top: 0, left: 0, height: '100vh', width: '100vw', zIndex: 9999, background: `url(https://cdn.dribbble.com/users/883586/screenshots/2335023/media/a9766036d474bd7f2727fdb102bdf2b5.gif) center / cover no-repeat`}} onAnimationEnd={handleAnimationEnd}></div>)}
       </div>
     </>
   )

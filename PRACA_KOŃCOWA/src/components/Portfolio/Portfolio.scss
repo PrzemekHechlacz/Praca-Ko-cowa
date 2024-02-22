@@ -1,39 +1,156 @@
-.gallery-container {
-    display: flex;
-    flex-direction: column; /* Ustawianie kierunku flexa na kolumnę */
-    align-items: center; /* Wyśrodkowanie w pionie */
+
+
+.portfolio-container {
+  background: linear-gradient(45deg, rgb(64, 161, 161), rgb(78, 76, 226));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   
-    .portfolio {
-      max-width: 100%;  
-     
-      border-radius: 4px;
-      position: absolute;
-      left: 60rem;
-      top:30rem;
-      /* Usunięcie zbędnych stylów */
-    }
+  padding: 2px;
+  margin-right: 1rem;
+ 
+}
+
+.portfolio-h1 {
+  font-size: 5.3rem;
+  text-align: center;
+  color: gold;
+  margin-top: 29rem;
   
-    .navigation_portfolio {
+}
+
+.gallery {
+  background: linear-gradient(
+      60deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  
+  
+}
+
+.thumbnail {
+  border: solid 3px rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 0 48px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 3.2rem;
+  height: 10rem;
+  max-width: 9.3rem;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s;
+
+
+  &:hover {
+      transform: scale(1.2);
+  }
+
+  #PortfolioImg {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+
+      &:focus {
+          border: solid 5px rgb(78, 76, 226);
+      }
+  }
+}
+
+.popup {
+  align-content: center;
+  animation: fadeIn 0.3s;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 55vh;
+  left: 0;
+  position: fixed;
+  top: 37%;
+  width: 100vw;
+  
+
+  &.hidden {
+      display: none;
+  }
+
+  &.fade-out {
+      animation: fadeOut 0.3s both;
+  }
+
+  &__img {
+      max-height: 80%;
+      max-width: 80%;
+  }
+
+  &__close {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 8rem;
+      position: fixed;
+      right: 9.5rem;
+      top: 2rem;
+  }
+
+  &__arrow {
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 128px;
+      height: 128px;
+      line-height: 128px;
       position: absolute;
       top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-  
-      button {
-        padding: 8px;
-        font-size: 16px;
-        background-color: #4caf50;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: #45a049;
-        }
+      width: 128px;
+
+      &--left {
+          left: 5%;
       }
-    }
+
+      &--right {
+          right: 5%;
+      }
   }
-  
+
+  &__close,
+  &__arrow {
+      opacity: 0.5;
+      transition: opacity 0.3s;
+
+      &:hover {
+          opacity: 1;
+      }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
