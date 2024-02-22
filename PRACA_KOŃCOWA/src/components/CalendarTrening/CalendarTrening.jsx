@@ -57,7 +57,7 @@ const handleAnimationEnd = () => {
     <MenuNav />
       <div className='app-calendar-trening'>
         <div className='calendar-container'>
-        <p className='calendar-p1'>SPRAWDŹ CZY MAM WOLNY TERMIN</p>
+        <p className='calendar-p1'>Formularz kontaktowy</p>
           <Calendar locale={pl} onChange={handleDateChange} value={dates} tileClassName={({date, view}) => (view === 'month' && dates.find(d => d.toDateString() === date.toDateString()) ? 'highlight' : null)} />
         </div>
         {isFormVisible && (
@@ -106,7 +106,7 @@ const handleAnimationEnd = () => {
             />
           </div>
           <div className='form-group'>
-            <label htmlFor='product'>Wybierz usługę:</label>
+            <label htmlFor='product'>Wybierz rodzaj usługi:</label>
             <select className='select-calendar'
               id='product'
               name='product'

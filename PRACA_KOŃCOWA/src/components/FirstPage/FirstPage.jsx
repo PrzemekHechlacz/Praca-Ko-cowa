@@ -12,7 +12,7 @@ import "./FirstPage.scss"
 const FirstPage = () => (
 <>
 
-
+<div className='FirstPage-div'>
     <MenuNav/>
     <h1 className='First-h1'>PROFESJONALNE SZKOLENIA, FOTOGRAFIA I FILMY Z DRONA
     <br/> <br/> ZAPRASZAM DO WSPÓŁPRACY </h1>
@@ -22,7 +22,7 @@ const FirstPage = () => (
     <PlanTrening />
     </div>
     <Footer />
-  
+    </div>
    
 
   </>

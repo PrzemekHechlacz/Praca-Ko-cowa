@@ -12,11 +12,11 @@ return (
 <div className="section-div">
         
             <h1 className="h1-section">FOTOGRAFIA I FILMY Z DRONA</h1>
-        <p className="p-section">Profesjonalne usługi z drona dla firm i instytucji oraz osób prywatnych, między innymi fotografia i filmowanie z powietrza budów, terenów inwestycyjnych, obiektów i terenów zielonych, inspekcje budowlane i wiele innych!</p>
+        <p className="p-section">Profesjonalne usługi z drona dla firm i instytucji oraz osób prywatnych, między innymi fotografia i filmowanie <br/>z powietrza budów, terenów inwestycyjnych, obiektów <br/>i terenów zielonych, inspekcje budowlane i wiele innych!</p>
         <nav> 
         <ul>
            <li className="li-arrange">
-           <Link to="/link-arrange"><button className="btn-arrange">umów usługę</button></Link>
+           <Link to="/link-arrange"><button className="btn-arrange">zamów usługę</button></Link>
            </li>
        </ul>
       </nav>

@@ -15,15 +15,16 @@
     box-shadow:
     10px -20px 20px lightblue inset,
     5px -5px 10px black;
+    text-shadow: 2px 1px 5px black;
    
 
-   
-    .ArrangePlan {
+
+    .FirstPage-div {
       display: flex;
       flex-wrap: wrap;
       width: 100vw;
+      position: relative;
     }
-
 
 @media screen and (min-width: 1300px) {
     left: 50%; 

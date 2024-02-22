@@ -1,8 +1,10 @@
+@import '/src/main.scss';
+
 
 .contact-div {
     display: flex;
     width: 90vw;
-    height: 45vh;
+    height: 40vh;
     flex-direction: column;
     align-items: center;
     color:black;
@@ -12,6 +14,17 @@
     5px -5px 10px black;
     margin-left: 5rem;
     padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    font-family: "Jura", sans-serif;
+}
 
-    
+.contact-h1,
+.contact-h2 {
+
+    text-shadow: 2px 2px 4px black;
+}
+
+.contact-p {
+  
+    text-align: center;
 }
