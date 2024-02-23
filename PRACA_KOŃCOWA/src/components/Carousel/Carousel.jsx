@@ -5,8 +5,7 @@ const Carousel = () => {
 
     const [docWidth, setDocWidth] = useState(document.body.clientWidth);
     
-
-    useEffect(() => {
+  useEffect(() => {
       const images = document.getElementById('imgs');
       
       const handleMouseEnter = (e) => {

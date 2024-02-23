@@ -38,7 +38,7 @@ const MenuNav = ({ style }) => {
         </Link>
        </div>
       <div className="itemMenuBox employees">
-        <a href="#" className="itemMenu ">
+        <a href="https://facebook.com" className="itemMenu ">
           <i className="fa fa-facebook" ><Link to="/contact"></Link></i>
         </a>
       </div>
@@ -48,7 +48,7 @@ const MenuNav = ({ style }) => {
         </Link>
       </div>
       <div className="itemMenuBox eservices">
-        <a href="#" className="itemMenu ">
+        <a href="https://instagram.com" className="itemMenu ">
           <i className="fa fa-instagram"></i>
         </a>
       </div>
@@ -58,7 +58,7 @@ const MenuNav = ({ style }) => {
         </Link>
       </div>
       <a href="#" className="toggleMenu floating" onClick={toggleMenu}>
-        <i className=""> <img  className="dron_menu" src="https://cdn-icons-gif.flaticon.com/10607/10607601.gif" alt="" /></i>
+        <i className=""> <img  className="dron_menu" src="https://e7.pngegg.com/pngimages/586/13/png-clipart-computer-icons-button-play-android-play-angle-trademark-thumbnail.png" alt="" /></i>
       </a>
     </div>
 </div>

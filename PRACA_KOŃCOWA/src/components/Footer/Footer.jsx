@@ -10,9 +10,8 @@ const Footer = () => {
 
     return (
         <div className="footer">
-        <p>copyright by <span className="footer-span">Przemysław Hechłacz</span></p>
-       
-         </div>
+                 <p>copyright by <span className="footer-span">Przemysław Hechłacz</span></p>
+        </div>
     )
 }
 

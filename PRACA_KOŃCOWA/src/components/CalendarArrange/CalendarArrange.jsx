@@ -7,7 +7,7 @@ import emailjs from 'emailjs-com';
 import MenuNav from "../MenuNav/MenuNav"
 
 const CalendarArrange = () => {
-    const [dates, setDates] = useState([]);
+  const [dates, setDates] = useState([]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
