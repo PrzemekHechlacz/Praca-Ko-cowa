@@ -1,19 +1,27 @@
 {
   "name": "y",
+  "homepage": "https://PrzemekHechlacz.github.io/Praca-Ko-cowa/",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  
+"type": "commonjs",
   "scripts": {
     "dev": "set \"VITE_CJS_TRACE=true\" && vite --mode development --port 3000",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    
+
   },
   "dependencies": {
     "axios": "^1.6.7",
     "date-fns": "^3.3.1",
     "emailjs": "^4.0.3",
     "emailjs-com": "^3.2.0",
+    "gh": "^2.8.9",
+    "pages": "^0.0.16",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primereact": "github:primefaces/primereact#master",
@@ -35,6 +43,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0",
     "sass": "^1.71.0",
     "sass-loader": "^14.1.0",
