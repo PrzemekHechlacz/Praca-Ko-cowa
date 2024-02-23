@@ -25,9 +25,7 @@ const CalendarTrening = () => {
     }
   };
 
-  
-  
-    const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
       e.preventDefault();
     
       emailjs.sendForm('service_qcks8wr', 'template_scg696m', e.target, 'VRkHMneHvVIMyNma9')

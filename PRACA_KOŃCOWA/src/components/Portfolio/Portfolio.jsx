@@ -3,11 +3,11 @@ import "./Portfolio.scss"; // załóżmy, że styles.css został zmieniony na Ga
 import MenuNav from "../MenuNav/MenuNav"
 
 const Portfolio = () => {
-  const [currentImgIndex, setCurrentImgIndex] = useState(0);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [currentImgIndex, setCurrentImgIndex] = useState(0);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
  
 
-  const showNextImg = () => {
+const showNextImg = () => {
     setCurrentImgIndex((prevIndex) =>
       prevIndex === thumbnails.length - 1 ? 0 : prevIndex + 1
     );
@@ -49,13 +49,11 @@ const Portfolio = () => {
   return (
     <div>
     <MenuNav />
-    
-    
-    <div className="portfolio-container">
-      <h1 className="portfolio-h1">Galeria lotów</h1>
-      <ul className="gallery">
-        {thumbnails.map((src, index) => (
-          <li key={src} className="thumbnail">
+          <div className="portfolio-container">
+              <h1 className="portfolio-h1">Galeria lotów</h1>
+                  <ul className="gallery">
+                  {thumbnails.map((src, index) => (
+                        <li key={src} className="thumbnail">
             <img className="PortfolioImg" id="PortfolioImg"
               tabIndex="0"
               src={src}
@@ -63,9 +61,9 @@ const Portfolio = () => {
               onClick={() => showPopup(index)}
               onKeyDown={(e) => e.key === "Enter" && showPopup(index)}
             />
-          </li>
+                        </li>
         ))}
-      </ul>
+                  </ul>
       {isPopupOpen && (
         <div className="popup">
           <button
@@ -74,23 +72,19 @@ const Portfolio = () => {
             onClick={closePopup}
           >
             X
-          </button>
-          <img src={thumbnails[currentImgIndex]} alt="" className="popup__img" />
-          <button
+                </button>
+                    <img src={thumbnails[currentImgIndex]} alt="" className="popup__img" />
+                          <button
             aria-label="Poprzednie zdjęcie"
             className="popup__arrow popup__arrow--left"
-            onClick={showPreviousImg}
-          >
-            {"<"}
-          </button>
-          <button
+            onClick={showPreviousImg}   > {"<"}
+                  </button>
+                  <button
             aria-label="Następne zdjęcie"
             className="popup__arrow popup__arrow--right"
-            onClick={showNextImg}
-          >
-            {">"}
-          </button>
-        </div>
+            onClick={showNextImg}     > {">"}
+                </button>
+             </div>
       )}
     </div>
     </div>
