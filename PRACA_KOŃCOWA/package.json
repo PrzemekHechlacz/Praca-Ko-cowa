@@ -1,13 +1,13 @@
 {
   "name": "y",
-  "homepage": "https://PrzemekHechlacz.github.io/Praca-Ko-cowa/",
+  "homepage": "https://PrzemekHechlacz.github.io/app-kg/",
   "private": true,
   "version": "0.0.0",
   
 "type": "commonjs",
   "scripts": {
     "dev": "set \"VITE_CJS_TRACE=true\" && vite --mode development --port 3000",
-    "build": "vite build",
+    "build": "CI= vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
