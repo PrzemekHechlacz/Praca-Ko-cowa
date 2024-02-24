@@ -19,7 +19,7 @@ const Weather = () => {
   useEffect(() => {
     const API_KEY = '5ce7e76f126f8274300cce6c45ee2d55';
   
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=pl`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=pl`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Błąd sieci');
