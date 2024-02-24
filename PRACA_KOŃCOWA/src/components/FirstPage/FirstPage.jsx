@@ -4,7 +4,7 @@ import ArrangeServices from '../ArrangeServices/ArrangeServices';
 import PlanTrening from '../PlanTrening/PlanTrening';
 import Footer from '../Footer/Footer';
 import MenuNav from '../MenuNav/MenuNav';
-import Weather from '../Wather/Weather';
+import Weather from '../Weather/Weather';
 import "./FirstPage.scss"
 
 
