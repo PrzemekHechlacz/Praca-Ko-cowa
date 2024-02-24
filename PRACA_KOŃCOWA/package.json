@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "set \"VITE_CJS_TRACE=true\" && vite --mode development --port 3000",
-    "build": "CI= vite build",
+    "build": "set CI=true&& vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build"
