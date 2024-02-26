@@ -9,7 +9,7 @@ const PlanTrening = () => {
 <div className="trening-div">
        
             <h1 className="h1-section-trening">UMÓW SIĘ NA SZKOLENIE</h1>
-        <p className="p-section-trening">Moje szkolenia są dostosowane zarówno dla początkujących, którzy dopiero planują zakup pierwszego drona, jak i dla pilotów dronów poszukujących doskonalenia swoich umiejętności.</p>
+        <p className="p-section-trening">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
        <nav> 
          <ul>
             <li className="li-trening">

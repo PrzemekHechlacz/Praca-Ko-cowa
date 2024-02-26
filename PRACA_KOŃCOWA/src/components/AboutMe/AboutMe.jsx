@@ -12,8 +12,7 @@ const AboutMe = ({style}) => {
        <MenuNav /> 
             <div className="aboutMe-div"  style={{ position: 'absolute', top: '30rem'}}>
                     <p className="aboutMe-p">
-        Mam na imię Kamil, fotografią zajmuję się od ponad dziewięciu lat, to moja wielka pasja. Spełniam się podczas wszelkich uroczystości rodzinnych, prywatnych, jak i obsługuję wydarzenia firmowe czy sesje produktowe. Aktualnie mieszkam we Wrocławiu, ale nie jest dla mnie problemem dotarcie w dowolne miejsce w Polsce. Aparat jeździ ze mną w zasadzie wszędzie, a dla dobrego zdjęcia jestem w stanie zrobić baaardzo dużo:)
-        Jestem spełnionym mężem i tatą, a najważniejszymi wartościami w moim życiu są rodzina, przyjaciele i realizacja siebie. Spoglądając przez wizjer aparatu mam szansę zobaczyć rzeczywistość trochę inaczej, chwytając te niepowtarzalne chwile, czy dostrzegając najlepsze cechy danego produktu czy usługi. I właśnie dlatego kocham to robić, patrzeć na świat kadrem i zatrzymywać go dla Was na zawsze.Kamil Grzyb
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                     </p>
             </div>
          </>
