@@ -40,16 +40,16 @@ const Carousel = () => {
   return (
     <div className="Carousel_img" id="imgs">
       <img src="/assets/kg1.jpg" alt="1" className='Carousel_img' />
-      <img src="/assets/kg2.jpg" alt="2" className='Carousel_img'/>
+      <img src="/assets/kg3.jpg" alt="2" className='Carousel_img'/>
       <img src="/assets/kg3.jpg" alt="3"className='Carousel_img' />
-      <img src="/assets/kg12.jpg" alt="12" className='Carousel_img'/>
-      <img src="/assets/kg13.jpg" alt="13" className='Carousel_img' />
-      <img src="/assets/kg6.jpg" alt="6" className='Carousel_img'/>
-      <img src="/assets/kg7.jpg" alt="7" className='Carousel_img'/>
-      <img src="/assets/kg8.jpg" alt="8" className='Carousel_img'/>
-      <img src="/assets/kg9.jpg" alt="9" className='Carousel_img' />
-      <img src="/assets/kg10.jpg" alt="10" className='Carousel_img' />
-      <img src="/assets/kg11.jpg" alt="11" className='Carousel_img'/>
+      <img src="/assets/kg1.jpg" alt="12" className='Carousel_img'/>
+      <img src="/assets/kg3.jpg" alt="13" className='Carousel_img' />
+      <img src="/assets/kg1.jpg" alt="6" className='Carousel_img'/>
+      <img src="/assets/kg3.jpg" alt="7" className='Carousel_img'/>
+      <img src="/assets/kg1.jpg" alt="8" className='Carousel_img'/>
+      <img src="/assets/kg3.jpg" alt="9" className='Carousel_img' />
+      <img src="/assets/kg1.jpg" alt="10" className='Carousel_img' />
+      <img src="/assets/kg3.jpg" alt="11" className='Carousel_img'/>
   </div>
   );
 };

@@ -25,7 +25,7 @@ const MenuNav = ({ style }) => {
     <div style={{position: 'relative'}}>
     <div style={{ position: 'absolute', top: '4.5rem'}} id="mainMenu"  className={`mainMenuOverlay floating2 ${isOpen ? 'open' : ''}`}
     onAnimationEnd={handleAnimationEnd}>
-    <div className='logo-kg'><img  className="logo-kg" src="https://kgfotografia.pl/wp-content/uploads/2017/08/kgfotografia_logo_2020_bp.png" alt="" /></div>
+    <div className='logo-kg'><img  className="logo-kg" src="https://t4.ftcdn.net/jpg/05/02/97/83/240_F_502978353_gnwNLAu8UgZ03eN4dwmH39RMphcasHDT.jpg" alt="" /></div>
       <div className={`navire floating3 ${isOpen ? 'visible' : ''}`} ></div>
       <div className="itemMenuBox bills">
       <Link to="/about-me" rel="noreferrer" className="itemMenu">

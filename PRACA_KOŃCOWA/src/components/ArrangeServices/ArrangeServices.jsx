@@ -11,7 +11,7 @@ return (
         <>
 <div className="section-div">
     <h1 className="h1-section">FOTOGRAFIA I FILMY Z DRONA</h1>
-            <p className="p-section">Profesjonalne usługi z drona dla firm i instytucji oraz osób prywatnych, między innymi fotografia i filmowanie <br/>z powietrza budów, terenów inwestycyjnych, obiektów <br/>i terenów zielonych, inspekcje budowlane i wiele innych!  </p>
+            <p className="p-section">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     <nav> 
         <ul>
            <li className="li-arrange">
